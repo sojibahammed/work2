@@ -1,0 +1,257 @@
+
+*{box-sizing: border-box;}
+body,a{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu{
+    background-color: #2d3e50;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 2;
+}
+.fixed{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+.color-white{
+    color: white;
+}
+.color-2{
+   color: #6FBEF3;
+}
+.home-menu{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.left-menu .menu-link, .right-menu .menu-link{
+    padding: .7em 1em;
+    display: inline-block;
+}
+.right-menu a.menu-link:hover{
+    color: #AECFE5;
+}
+.wraper{
+    height: 100%;
+    background-color: #1f8dd6;
+    z-index: -1;
+}
+.wraper .sub-wraper{
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    width: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.wraper-head h1{
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 1em 1.6em;
+    font-weight: lighter;
+    font-size: 300%;
+    
+}
+.sub-wraper .text{
+    text-transform: uppercase;
+}
+a.text-link{
+    background-color: white;
+    color: #1f8dd6;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+
+.main-body{
+   
+    margin-top: 500px;
+    
+}
+.section-excepteur{
+    background-color: white;
+    color: #4e495e;
+    text-align: center;
+    padding: 2em 0;
+}
+.section-excepteur h2{
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    
+}
+.description{
+    display: flex;
+    /* flex-direction: row; */
+    padding-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.description .section-excepteur-inner{
+    flex: 25%;
+    text-align: left;
+    padding: .5em;
+    color: #7f8c8d;
+    line-height: 1.7;
+
+}
+.section-excepteur-inner h3{
+    color: #1f8dd6;
+}
+.section-excepteur-inner i{
+    margin-right: 7px;
+}
+.main-body-black{
+    display: flex;
+    background-color: #2d3e50;
+   padding: 50px 0;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.main-body-black-left{
+    flex: 40%;
+    text-align: center;
+    padding: 0 80px;
+    
+    
+}
+.main-body-black-right{
+    color: #7f8c8d;
+    flex: 60%;
+    padding: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+.form-section{
+background-color: white;
+padding: 40px;
+
+}
+.form-section h2{
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+}
+.form-section-form{
+    flex: 40%;
+    padding: 40px 20px;
+
+}
+.form-section-des{
+    flex:60%;
+    padding: 20px;
+}
+.form-section-head{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    
+}
+.head{
+    color: #34495e;
+}
+.form-section-des p{
+    color:  #7f8c8d;
+    line-height: 2;
+}
+label{
+    font-weight: bold;
+}
+input[type=text],input[type=email],input[type=password]{
+    width: 100%;
+    margin: 8px 0 16px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    font-size: 16px;
+
+}
+input[type=submit]{
+    border: none;
+    background-color: #1f8dd6;
+    color: white;
+    padding: 8px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.footer{
+    background-color: black;
+    color: #cad4dd;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width:1192px) {
+    .main-body{
+       
+        margin-top: 600px;
+    }
+}
+@media (max-width:992px) {
+   .description .section-excepteur-inner{
+        flex: 50%;
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        font-size: 13px;
+    }
+.wraper .sub-wraper{
+    width: 80%;
+}
+.wraper-head h1{
+    font-size: 200%;
+    padding: .5em 1em;
+}
+a.text-link{
+    padding: 8px 20px;
+    font-size: 1em;
+}
+.main-body{
+   
+    margin-top: 400px;
+}
+.description .section-excepteur-inner{
+        flex: 100%;
+    }
+.description .section-excepteur-inner h3{
+    margin: 0;
+}
+.main-body-black-left, .main-body-black-right{
+    flex: 100%;
+}
+.form-section-form,.form-section-des{
+    flex: 100%;
+}
+
+}
